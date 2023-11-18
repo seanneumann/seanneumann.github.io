@@ -1,0 +1,36 @@
+{
+  "name": "firsttest",
+  "version": "1.0.0",
+  "description": "Testing OpenAI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanneumann/seanneumann.github.io.git"
+  },
+  "keywords": [
+    "yoga",
+    "AI",
+    "ChatGPT",
+    "OpenAI",
+    "wellness",
+    "fitness",
+    "health",
+    "web",
+    "development",
+    "Node.js",
+    "JavaScript"
+  ],
+  "author": "Sean Neumann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seanneumann/seanneumann.github.io/issues"
+  },
+  "homepage": "https://github.com/seanneumann/seanneumann.github.io#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "openai": "^4.19.0"
+  }
+}
