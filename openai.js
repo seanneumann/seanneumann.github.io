@@ -1,4 +1,4 @@
-// index.js
+// openai.js
 import OpenAI from "openai";
 import dotenv from 'dotenv';
 
