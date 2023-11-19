@@ -1,6 +1,7 @@
 {
   "name": "firsttest",
   "version": "1.0.0",
+  "type": "module",
   "description": "Testing OpenAI",
   "main": "index.js",
   "scripts": {
@@ -11,13 +12,9 @@
     "url": "git+https://github.com/seanneumann/seanneumann.github.io.git"
   },
   "keywords": [
-    "yoga",
     "AI",
     "ChatGPT",
     "OpenAI",
-    "wellness",
-    "fitness",
-    "health",
     "web",
     "development",
     "Node.js",

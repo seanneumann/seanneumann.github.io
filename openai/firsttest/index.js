@@ -1,23 +1,32 @@
-require('dotenv').config();
+// index.js
+import OpenAI from "openai";
+import dotenv from 'dotenv';
 
-const { Configuration, OpenAIApi } = require("openai");
+dotenv.config();
 
-const configuration = new Configuration({
+const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
-const openai = new OpenAIApi(configuration);
+
+/*
+const chatCompletion = await openai.chat.completions.create({
+  messages: [{ role: "user", content: "Say this is a test" }],
+  model: "gpt-3.5-turbo",
+});
+*/
 
 async function generateResponse() {
   try {
-    const response = await openai.createCompletion({
-      model: "text-davinci-003",
-      prompt: "Translate the following English text to French: 'Hello, how are you?'",
-      max_tokens: 60,
+    const response = await openai.chat.completions.create({
+      model: "gpt-3.5-turbo",
+      messages: [{ role: "user", content: "Translate 'Hello, my name is Sean' into French" }],
     });
-    console.log(response.data.choices[0].text.trim());
+    console.log(response.choices);
   } catch (error) {
     console.error(error);
   }
 }
 
 generateResponse();
+
+
